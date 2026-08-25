@@ -154,13 +154,13 @@ console.log(duplicatedItems3(str));
 const arr7 = [1, 2, 3, 4, 5, 6, 7, 8];
 
 //First way
-console.log(splitArray1(arr));
+console.log(splitArray1(arr7));
 
 //Second way
-console.log(splitArray2(arr));
+console.log(splitArray2(arr7));
 
 //Third way
-console.log(splitArray3(arr));
+console.log(splitArray3(arr7));
 
 
 //Reverse each word in the array
@@ -168,13 +168,13 @@ console.log(splitArray3(arr));
 const arr8 = ["red", "yellow", "green", "purple", "blue", "white"];
 
 //First way
-console.log(reverseWords1(arr));
+console.log(reverseWords1(arr8));
 
 //Second way
-console.log(reverseWords2(arr));
+console.log(reverseWords2(arr8));
 
 //Third way
-console.log(reverseWords3(arr));
+console.log(reverseWords3(arr8));
 
 //Convert full names into initials
 
@@ -183,13 +183,13 @@ const arr9 = ['Eduard Newgate', 'Naruto Uzumaki'];
 //First way
 
 //Second way
-console.log(initialsName1(arr));
+console.log(initialsName1(arr9));
 
 //Second way
-console.log(initialsName2(arr));
+console.log(initialsName2(arr9));
 
 //Third way
-console.log(initialsName3(arr));
+console.log(initialsName3(arr9));
 
 
 //Find the first product with a total price over 1000
@@ -198,23 +198,23 @@ const arr10 = [{ name: "Laptop", price: 500, quantity: 3 }, { name: "Phone", pri
 { name: "Tablet", price: 400, quantity: 2 }];
 
 //First way
-console.log(productOver1(arr));
+console.log(productOver1(arr10));
 
 //Second way
-console.log(productOver2(arr));
+console.log(productOver2(arr10));
 
 //Third way
-console.log(productOver3(arr));
+console.log(productOver3(arr10));
 
 //Find words with 5 letters or more and sort them
 
 const arr11 = [["Apple", "banana", "cherry", "date", "elderberry"]];
 
 //First way
-console.log(wordsWith5Letters1(arr));
+console.log(wordsWith5Letters1(arr11));
 
 //Second way
-console.log(wordsWith5Letters2(arr));
+console.log(wordsWith5Letters2(arr11));
 
 //Third way
-console.log(wordsWith5Letters3(arr));
+console.log(wordsWith5Letters3(arr11));
