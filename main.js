@@ -26,6 +26,18 @@ import {
     wordsWith5Letters1,
     wordsWith5Letters2,
     wordsWith5Letters3,
+    sumPositiveNumbers1,
+    sumPositiveNumbers2,
+    sumPositiveNumber3,
+    studentsPassed1,
+    studentsPassed2,
+    studentsPassed3,
+    priceAboveAverage1,
+    priceAboveAverage2,
+    priceAboveAverage3,
+    sortPeopleByage1,
+    sortPeopleByage2,
+    sortPeopleByage3,
 } from "./lib.js";
 // // Find the largest number and the number before it
 
@@ -218,3 +230,59 @@ console.log(wordsWith5Letters2(arr11));
 
 //Third way
 console.log(wordsWith5Letters3(arr11));
+
+//Use reduce to sum only positive numbers 
+
+const arr12 = [1, 11, -9, 20, -3, 8, -1];
+
+//First way
+console.log(sumPositiveNumbers1(arr12));
+
+//Second way 
+console.log(sumPositiveNumbers2(arr12));
+
+//Third way
+console.log(sumPositiveNumber3(arr12));
+
+//Extract names of students who passed 
+
+const arr13 = [{ name: "Sara", status: "pass" }, { name: "Ali", status: "fail" }, {
+    name: "Lina", status:
+        "pass"
+}];
+
+//First way
+console.log(studentsPassed1(arr13));
+
+//Second way
+console.log(studentsPassed2(arr13));
+
+//Third way
+console.log(studentsPassed3(arr13));
+
+//Extract products with price above the average 
+
+const arr14 = [{ name: "Table", price: 500 }, { name: "Chair", price: 200 }, { name: "Desk", price: 800 },
+{ name: "Lamp", price: 150 }];
+
+//First way
+console.log(priceAboveAverage1(arr14));
+
+//Second way
+console.log(priceAboveAverage2(arr14));
+
+//Third way
+console.log(priceAboveAverage3(arr14));
+
+//Sort people by age descending and return their names 
+
+const arr15 = [{ name: "Ahmad", age: 25 }, { name: "Omar", age: 30 }, { name: "Layla", age: 22 }];
+
+//First way
+console.log(sortPeopleByage1(arr15));
+
+//Second way
+console.log(sortPeopleByage2(arr15));
+
+//Third way
+console.log(sortPeopleByage3(arr15));

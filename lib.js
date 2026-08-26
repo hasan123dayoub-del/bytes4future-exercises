@@ -468,3 +468,141 @@ export const wordsWith5Letters3 = (arr = []) => {
         return result;
     },);
 };
+
+//Use reduce to sum only positive numbers 
+
+//First way
+
+export const sumPositiveNumbers1 = (arr = []) => {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > 0) {
+            sum += arr[i];
+        }
+    }
+    return sum;
+}
+
+//Second way
+
+export const sumPositiveNumbers2 = (arr = []) => {
+    return arr.reduce((sum, number) => {
+        if (number > 0) {
+            sum += number;
+        }
+        return sum;
+
+    }, 0);
+}
+
+//Third way 
+
+export const sumPositiveNumber3 = (arr = []) => {
+    let sum = 0;
+    arr.filter((number) => {
+        if (number > 0) {
+            sum += number;
+        }
+    });
+    return sum;
+}
+
+//Extract names of students who passed 
+
+//First way
+
+export const studentsPassed1 = (arr = []) => {
+    return arr.reduce((arr2, item) => {
+        if (item.status === "pass") {
+            arr2.push(item.name);
+        }
+        return arr2;
+    }, []);
+}
+
+//Second way
+
+export const studentsPassed2 = (arr = []) => {
+    const arr2 = [];
+    arr.forEach((item) => {
+        if (item.status === "pass") {
+            arr2.push(item.name);
+        }
+    });
+    return arr2;
+}
+
+//Third way
+
+export const studentsPassed3 = (arr = []) => {
+    const arr2 = [];
+    arr.map((item) => {
+        if (item.status === "pass") {
+            arr2.push(item.name);
+        }
+    });
+    return arr2;
+}
+
+//Extract products with price above the average 
+
+//First way
+
+export const priceAboveAverage1 = (arr = []) => {
+    const price = arr.map(item => item.price);
+    const avg = averageOfNumbers1(price);
+    return arr.reduce((arr2, item) => {
+        if (item.price > avg) {
+            arr2.push(item);
+        }
+        return arr2;
+    }, []);
+}
+
+//Second way
+
+export const priceAboveAverage2 = (arr = []) => {
+    const arr2 = [];
+    const price = arr.map(item => item.price);
+    const avg = averageOfNumbers1(price);
+    for (const item of arr) {
+        if (item.price > avg) {
+            arr2.push(item);
+        }
+    }
+    return arr2;
+}
+
+//Third way
+
+export const priceAboveAverage3 = (arr = []) => {
+    const price = arr.map(item => item.price);
+    const avg = averageOfNumbers1(price);
+    return arr.filter(item => item.price > avg
+    );
+}
+
+//Sort people by age descending and return their names 
+
+//First way
+
+export const sortPeopleByage1 = (arr = []) => {
+    return [...arr].sort((a, b) => b.age - a.age).reduce((result, item) => {
+        result.push(item.name);
+        return result;
+    }, []);
+}
+
+//Second way
+
+export const sortPeopleByage2 = (arr = []) => {
+    return [...arr].sort((a, b) => b.age - a.age).map(item => item.name);
+}
+
+//Third way
+
+export const sortPeopleByage3 = (arr = []) => {
+    const arr2 = [];
+    [...arr].sort((a, b) => b.age - a.age).forEach(item => arr2.push(item.name));
+    return arr2;
+}
