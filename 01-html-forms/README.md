@@ -1,0 +1,19 @@
+# Bytes4Future — Web Fundamentals Practice
+
+Practice exercises from the **Bytes4Future** full-stack program by the **Aga Khan Foundation (AKF)**.
+
+## 📌 Contents
+
+| File | Description |
+| :--- | :--- |
+| `index.html` | HTML form basics — a radio-button group for choosing a favorite web language (HTML, CSS, JavaScript) with linked labels |
+| `CSS/style.css` | Stylesheet for the exercises |
+
+## 🛠 Tech
+
+- HTML5
+- CSS3
+
+## ▶️ Run
+
+No build step needed — open `index.html` in any browser.
